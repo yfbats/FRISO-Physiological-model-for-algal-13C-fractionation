@@ -23,7 +23,7 @@ source("grind.R") #download and save to working directory: https://bioinformatic
 
 #Data should contain the following columns:
 # daylight (daylength in h)
-# co2 (in µmol/L)
+# co2 (in µmol/kg)
 # pH
 # Vcell (volume of cell in cm^3)
 # eps (ε[p] (fractionation) in per mil)
