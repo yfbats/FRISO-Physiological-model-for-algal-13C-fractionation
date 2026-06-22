@@ -104,7 +104,7 @@ This script performs post hoc validation by:
 
 Culture data files should contain these columns:
 - `daylight` - Daylength (h)
-- `co2` - CO₂ concentration (µmol/L)
+- `co2` - CO₂ concentration (µmol/kg)
 - `pH` - pH
 - `Vcell` - Cell volume (cm³)
 - `eps` - Photosynthetic fractionation ε_p (‰)
