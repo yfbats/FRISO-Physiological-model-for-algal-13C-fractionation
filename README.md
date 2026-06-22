@@ -29,7 +29,7 @@ The model simulates:
   - Cell geometry calculations (cytosol, chloroplast, pyrenoid, thylakoid dimensions)
   - Reaction rate constants for CO₂/HCO₃⁻ inter-conversion
   - Carbonate chemistry calculations
-  - Tunable parameters (calcification rate, uptake rates, Michaelis-Menten constant)
+  - Tunable parameters (calcification rate, uptake rates, Michaelis-Menten parameterization)
 
 - **`Generic model behavior.R`** - Model investigation script
   - Explores model behavior across environmental gradients (example demonstrates CO₂ and light intensity, but any parameter can be varied)
@@ -125,7 +125,7 @@ Culture data files should contain these columns:
 The model simulates carbon dynamics across five intracellular compartments:
 1. **Cytosol** - Outer cellular compartment, site of initial CO₂/HCO₃⁻ exchange
 2. **Chloroplast stroma** - Inner chloroplast compartment, connected to thylakoids
-3. **Thylakoid** - Site of photosynthetic electron transport
+3. **Thylakoid** - Site of photosynthetic light reactions/ATP production
 4. **Pyrenoid** - RuBisCO-containing compartment, site of carbon fixation
 5. **Calcification** - CaCO₃ precipitation (for *E. huxleyi*)
 
@@ -154,6 +154,17 @@ The model accounts for isotopic fractionation during:
 |-----------|-----------|-----------------|-------------|
 | RuBisCO fractionation | 11.1‰ | 24‰ | Isotopic fractionation during CO₂ fixation |
 | Membrane permeability | 0.01 cm/s | 0.027 cm/s | CO₂ diffusion across biological membranes |
+| Vcell | | | Constrained from culture measurements|
+| pH | | | Constrained from culture measurements|
+| Temp and sal | | | Constrained from culture measurements|
+| r1/POC/ui | | | growth rate --> constrained from culture measurements|
+| PFD | | | Constrained from culture measurements|
+| Daylight | | | Constrained from culture measurements|
+
+
+
+
+
 
 ### Tunable Parameters
 
