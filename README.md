@@ -186,11 +186,11 @@ The model returns a data frame with these columns for each simulation:
 | `dCch`, `dHch` | ‰ | δ¹³C in chloroplast stroma |
 | `dCt`, `dHt` | ‰ | δ¹³C in thylakoid |
 | `dCp`, `dHp` | ‰ | δ¹³C in pyrenoid |
-| `Cc`, `Cch`, `Ct`, `Cp` | M | Carbon concentrations in compartments |
+| `Cc`, `Cch`, `Ct`, `Cp` | mol/cm³ | Carbon concentrations in compartments |
 | `Uptake` | fraction | Relative HCO₃⁻ uptake (0-1) |
 | `Leakage` | fraction | CO₂ leakage rate (0-1) |
 | `Vcell` | cm³ | Cell volume |
-| `Ce` | M | External CO₂ concentration |
+| `Ce` | mol/cm³ | External CO₂ concentration |
 | `pCO2` | µatm | Partial pressure of CO₂ |
 | `Temp` | °C | Temperature |
 | `PFD` | µmol/m²/s | Photon flux density |
