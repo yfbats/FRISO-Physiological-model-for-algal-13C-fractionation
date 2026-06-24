@@ -16,7 +16,7 @@ The model describes carbon transfer and isotope fractionation across four intrac
 3. Thylakoid
 4. Pyrenoid
 
-For haptophytes such as Gephyrocapsa (Emiliania huxleyi), calcification is treated as an additional process associated with the model framework rather than as a separate compartment.
+For haptophytes such as Gephyrocapsa (Emiliania) huxleyi, calcification is treated as an additional process associated with the model framework rather than as a separate compartment.
 
 ## Repository files
 
@@ -62,6 +62,21 @@ source("Model culture validation.R")
 ```
 
 This setup is especially helpful when working locally or when sharing the repository with others.
+
+Recommended working directory setup:
+
+your_project_folder/
+├── R scripts/
+    ├── Carbon flux and isotope model.R
+    ├── parameters.R
+    ├── Generic model behavior.R
+    ├── Model culture validation.R
+    └── grind.R
+    └── data/
+        ├── Ehux.xlsx
+        ├── haptfluxdata.xlsx
+        ├── Dino.xlsx
+        └── dinofluxdata.xlsx
 
 ## Running the model
 
