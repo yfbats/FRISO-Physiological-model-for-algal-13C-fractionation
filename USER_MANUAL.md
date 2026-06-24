@@ -141,6 +141,43 @@ The model returns outputs such as:
 
 These outputs can be used to interpret how changing environmental or physiological assumptions affects the model.
 
+## Troubleshooting
+
+Common issues and suggested fixes:
+
+- Package installation errors
+  - Install the required packages before running the scripts:
+
+```r
+install.packages(c("seacarb", "readxl", "ggplot2", "dplyr"))
+```
+
+- `grind.R` not found
+  - Make sure `grind.R` is present in the working directory or in a directory that is on your R search path.
+  - If you are using RStudio, confirm that the correct folder is selected as the working directory.
+
+- File not found errors for input files
+  - Check that the `data` folder exists and contains the expected files.
+  - Verify that your working directory is set to the folder containing the scripts or to the folder that contains `data`.
+  - You can inspect the current working directory with:
+
+```r
+getwd()
+```
+
+- Errors when sourcing scripts
+  - Ensure that you run the script from the correct directory, or use `setwd()` to point R to the appropriate folder before sourcing:
+
+```r
+setwd("path/to/your/R scripts/folder")
+source("Generic model behavior.R")
+```
+
+- Unexpected or empty model output
+  - Check that the input data frame contains the expected columns and that the values are valid.
+  - Review the parameter values in `R scripts/parameters.R` for obvious inconsistencies such as missing values or unrealistic ranges.
+  - If the script stops with an error, read the message carefully because it often indicates the first missing object, package, or file.
+
 ## Notes
 
 - The scripts are intended for manual exploration and analysis.
